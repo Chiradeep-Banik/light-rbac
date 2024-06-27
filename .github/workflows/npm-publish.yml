@@ -12,4 +12,4 @@ jobs:
           node-version: "21"
       - uses: JS-DevTools/npm-publish@v3
         with:
-          token: ${{ secrets.NPM_TOKEN }}
+          token: ${{ secrets.NODE_AUTH_TOKEN }}
