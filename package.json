@@ -1,6 +1,6 @@
 {
   "name": "light-rbac",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A simple implementation of Role-Based-Access-Control method",
   "main": "index.js",
   "keywords": [
