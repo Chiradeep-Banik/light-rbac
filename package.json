@@ -1,0 +1,12 @@
+{
+  "name": "light-rbac",
+  "version": "1.0.0",
+  "description": "This is a simple implementation of Role-Based-Access-Control method",
+  "main": "index.js",
+  "keywords": [
+    "RBAC",
+    "light weight"
+  ],
+  "author": "chiradeepbanik",
+  "license": "MIT"
+}
