@@ -1,9 +1,14 @@
 class RBAC {
+  /**
+   * @param {Object} rolesPolicy A object containing roles, actions and policy
+   *
+   */
   constructor(rolesPolicy) {
     this.rolesPolicy = rolesPolicy;
   }
   /**
    * @param {string} value The value that needs to be filled.
+   * @returns {Array} filled_array with the values.
    */
   #fill_star(value) {
     let filled = [];
@@ -18,7 +23,7 @@ class RBAC {
   /**
    * @param {string} role The name of the user's role.
    * @param {string} access The name of the access type that the role is trying to access.
-   *
+   * @returns {Boolean} Returns true or false based on if the user has access or not.
    */
   hasAccess(role, action) {
     try {
@@ -55,6 +60,15 @@ class RBAC {
     } catch (e) {
       return false;
     }
+  }
+}
+
+class BuildPolicy {
+  constructor(policy) {
+    this.policy = policy;
+  }
+  getPolicy() {
+    return this.policy;
   }
 }
 
